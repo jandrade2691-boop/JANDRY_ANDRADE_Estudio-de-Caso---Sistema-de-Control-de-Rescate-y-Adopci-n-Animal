@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz con el formulario de ingreso de un nuevo animal
+    rescatado.</title>
+</head>
+<body>
+ <header>
+    <h1>ANIMAL RESCATADO</h1>
+    <br>
+     <nav>
+    <a href="rescates.html" title="Regresar">Regresar</a><br>
+    <a href="https://github.com/jandrade2691-boop/JANDRY_ANDRADE_Estudio-de-Caso---Sistema-de-Control-de-Rescate-y-Adopci-n-Animal.git" title="Navegar">Navegar</a><br>
+    <a href="UNIDAD2/index.html" title="Regresar">Regresar</a><br>
+    <a href="UNIDAD2/rescates.html" title="Regresar">Regresar</a><br>
+    <a href="Practica.html" title="Regresar">Regresar</a><br>
+    <a href="PRACTICAS_HTML/" title="Regresar">Regresar</a><br>
+    <a href="index.html" title="Regresar">Regresar</a><br>
+    <a href="IMAGEN1/INFORMATICA_2026..jpg" title="Regresar">Regresar</a><br>
+      <a href="IMAGENES/DESARROLLO_DE_SISTEMAS_INFORMATICOS..jpg" title="Regresar">Regresar</a><br>
+   </nav>
+     <br>
+ </header>
+ <main>
+    <br>
+    <section id="ANIMALES_RESCATADOS">
+        <br>
+        <h2>ANIMAL</h2>
+        <br>
+        <p> Yo entendí que el sistema debe controlar desde que un ciudadano reporta un animal hasta su adopción. Identifiqué 4 actores: Ciudadano que reporta, Voluntario que apoya, Veterinario que evalúa y Administrador que asigna y cambia estados. Requisitos que prioricé: RF04 Clasificar por especie, RF05 Crear expediente especializado y RF11 Notificar nuevos rescates. Además mantener historial y trazabilidad.  </p>
+        <br>
+     <article>
+       <h2> ANIMALES RESCATADOS</h2>
+      <p>El Ministerio del Ambiente, a través de la Dirección Nacional de Biodiversidad y la Dirección Provincial del Ambiente de Santo Domingo de los Tsáchilas, en coordinación con la Unidad de Protección del Medio Ambiente de la Policía Nacional, Fiscalía General del Estado, miembros del Grupo de Operaciones Especiales, realizaron un operativo de decomiso de 18 animales silvestres y exóticos, en el Centro de Rescate Carlos Becdach, ubicado en el kilómetro 34 de la vía Santo Domingo, Esmeraldas, sector la Concordia.</p>
+   </article>
+    <br>
+    <form>
+  <label for="titulo_del_caso">Título del caso</label>
+  <input type="text" id="titulo_del_caso" required>
+  <br>
+
+  <label for="nombre_provisional">NOMBRE PROVISIONAL</label>
+  <input type="text" id="nombre_provisional" required>
+  <br>
+
+  <button type="submit">Guardar</button>
+  <button type="reset"> Limpiar</button> <br>
+</form>
+        
+             <label for="categoria">Categoría</label>
+           <select name="categoria" id="categoria">
+      <option value="">Selecciona una categoría</option>
+        <option value="perros">Perros</option>
+        <option value="gatos">Gatos</option>
+        <option value="fauna_silvestre">Fauna Silvestre</option>
+        </select>
+         <br>      
+                     
+        <label for="Alta">Alta</label>
+        <input type="radio" name="Nivel de urgencia medica" id="Alta">
+        <label for="Media">Media</label>
+        <input type="radio" name="Nivel de urgencia medica" id="Media">
+        <label for="Baja">Baja</label>
+        <input type="radio" name="Nivel de urgencia medica" id="Baja">
+         <br>
+         <label for="descripcion">Descripcion</label>
+       <textarea name="descripcion" id="descripcion" rows="4"></textarea>
+    
+    </section>
+    <br>
+ </main>
+ <footer>
+   <h1>Bibliografias</h1>
+   <ul>
+    <li> Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley. - Lo usé para Singleton, Observer y Factory Method.</li>
+    <li> Martin, R. C. (2017). Clean Architecture: A Craftsman's Guide to Software Structure and Design. Prentice Hall. - Para principios SOLID y separación por capas.</li>
+    <li>Fowler, M. (2002). Patterns of Enterprise Application Architecture. AddisonWesley. - Para Repositorio y MVC.</li>
+    <li>Andrade,A.J.2026.Tarea en HTML.Interfaz con el formulario de ingreso de un nuevo animal
+    rescatado.</li>
+    </ul>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz con el formulario de ingreso de un nuevo animal
+    rescatado.</title>
+</head>
+<body>
+ <header>
+    <h1>ANIMAL RESCATADO</h1>
+    <br>
+    <nav>
+    <a href="rescates.html" title="Regresar" >Regresar</a><br>
+    <a href="rescates.html" title="Navegar">Navegar</a><br>
+    <a href="rescates.html" title="Regresar">Regresar</a><br>
+     </nav>
+     <br>
+ </header>
+ <main>
+    <br>
+    <section id="ANIMALES RESCATADOS">
+        <br>
+        <h4>ANIMALES</h4>
+        <br>
+        <p> Yo entendí que el sistema debe controlar desde que un ciudadano reporta un animal hasta su adopción. Identifiqué 4 actores: Ciudadano que reporta, Voluntario que apoya, Veterinario que evalúa y Administrador que asigna y cambia estados. Requisitos que prioricé: RF04 Clasificar por especie, RF05 Crear expediente especializado y RF11 Notificar nuevos rescates. Además mantener historial y trazabilidad.  </p>
+        <br>
+     <article> Modelo UML que propuse Caso de uso: Registrar rescate, Clasificar, Crear expediente, Asignar responsable, Actualizar estado, Consultar historial. Clases: Separé Animal de CasoRescate porque un mismo animal puede tener varios casos a lo largo del tiempo. ExpedienteAnimal abstracto con hijos ExpedientePerro, ExpedienteGato, ExpedienteFauna. Relaciones: Asociación Animal-CasoRescate, Composición CasoRescateAsignación y Composición CasoRescate-HistorialEstado.  </article>
+    <br>
+    <form action="">
+        <label for="Título del caso"> Título del caso: </label>
+        <input type="text" id="Título del caso" required> <br>
+
+        <label for="NOMBRE PROVISIONAL"> NOMBRE PROVISIONAL: </label>
+        <input type="text" id="NOMBRE PROVISIONAL" required> <br>
+
+        <label for="NOMBRE PROVISIONAL "> NOMBRE PROVISIONAL: </label>
+        <input type="text" id="NOMBRE PROVISIONAL " required> <br>
+        
+        <button type="submit">Enviar</button> <br>
+        <button type="reset"> Limpiar</button> <br>
+
+                     <select name="Categoria" id="Categoria"><br>
+                     <option value=""> </option> 
+                    <option value="Perros"> Perros</option>
+                       <option value="Gatos"> Gatos</option>
+                    <option value="Fauna Silvestre"> Fauna Silvestre</option>
+                     </select><br>
+        <label for="">Alta</label>
+        <input type="radio" name="Nivel de urgencia medica" id="Alta">
+        <label for="">Media</label>
+        <input type="radio" name="Nivel de urgencia medica" id="Media">
+        <label for="">Baja</label>
+        <input type="radio" name="Nivel de urgencia medica" id="Baja">
+         <br>
+         <label for="">Descripcion</label><br>
+        <textarea name="" id="" rows="4"></textarea>
+    </form>
+    </section>
+    <br>
+ </main>
+ <footer>
+   <ul>
+    <li> Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley. - Lo usé para Singleton, Observer y Factory Method.  </li><br>
+    <li> Martin, R. C. (2017). Clean Architecture: A Craftsman's Guide to Software Structure and Design. Prentice Hall. - Para principios SOLID y separación por capas.</li><br>
+    <li>Fowler, M. (2002). Patterns of Enterprise Application Architecture. AddisonWesley. - Para Repositorio y MVC.</li><br>
+    <li>Andrade,A.J.2026.Tarea en HTML.Interfaz con el formulario de ingreso de un nuevo animal
+    rescatado.</li>
+    </ul>
+ </footer>
+</body>
+</html>
